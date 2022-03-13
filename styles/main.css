@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+}
+
+.topPage{
+    background-image: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border-bottom-left-radius: 200px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 200px; /*LEMBRAR DE APAGAR*/
+}
+
+.intro{
+    background-image: url('../images/bg-pattern-intro-desktop.svg');
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 32px 0;
+}
+
+header{
+    max-width: 1440px;
+    display: flex;
+    width: 100%;
+    color: #FFF;
+    font-size: 16px;
+    align-items: center;
+}
+
+.logoWrapper{
+    margin-right: 64px;
+}
+
+header nav{
+    font-weight: 400;
+    display: flex;
+}
+
+
+.navListWrapper{
+    position: relative;
+    padding: 8px 33px 8px 0;
+}
+
+.navListWrapper span{
+    cursor: pointer;
+    position: relative;
+}
+
+.navListWrapper span::after{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #FFF;
+    border-radius: 200px;
+    overflow: hidden;
+    transition: 0.35s;
+}
+
+.navListWrapper:hover span::after{
+    width: 100%;
+}
+
+.navListWrapper{
+    z-index: 3;
+}
+
+nav ul li{
+    padding: 16px 0;
+    margin: 0;
+}
+
+nav ul a{
+    color: #2b2b37;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.4ms;
+}
+
+nav ul a:hover{
+    font-weight: 600;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    background-color: #FFF;
+    padding: 30px;
+    border-radius: 16px;
+    top: 26px;
+    left: -24px;
+    min-width: 127px;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: -1;
+}
+
+.navListWrapper:hover ul{
+    transform: translateY(8px);
+    opacity: 1;
+    z-index: 2;
+}
