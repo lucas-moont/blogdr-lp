@@ -169,7 +169,8 @@ nav ul{
 }
 
 .navSecondCol .whiteBtn,
-.whitetBtn{
+.whiteBtn,
+.transparentBtn:hover{
     background-color: #FFF;
     color: #fa808d;
     height: 48px;
@@ -179,6 +180,20 @@ nav ul{
     border-radius: 32px;
     font-weight: 700;
     transition: 0.5s;
+    cursor: pointer;
+}
+
+.transparentBtn{
+    color: #FFF;
+    padding: 0 48px;
+    border: 1px solid #FFF;
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+    border-radius: 32px;
+    text-decoration: none;
+    font-weight: 700;
+
 }
 
 .whiteBtn:hover{
@@ -195,4 +210,15 @@ nav ul{
     margin-top: 128px;
     color: #FFF;
     line-height: 1.3em;
+    margin-bottom: 16px;
+}
+
+.container p{
+    font-size: 1.3em;
+}
+
+.topPage p{
+    color: #FFF;
+    font-weight: 300;
+    margin-bottom: 64px;
 }
