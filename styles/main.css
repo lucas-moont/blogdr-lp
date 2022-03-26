@@ -16,18 +16,30 @@ body{
     overflow: hidden;
     position: relative;
     padding-bottom: 200px; /*LEMBRAR DE APAGAR*/
+    position: relative;
+}
+
+.topPage::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/bg-pattern-intro-desktop.svg');
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .intro{
-    background-image: url('../images/bg-pattern-intro-desktop.svg');
-    background-size: cover;
-    background-position: right;
     MAX-width: 100%;
     display: flex;
-    background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
     padding: 64px 32px 0;
+    z-index: 5;
 }
 
 header{
@@ -37,6 +49,8 @@ header{
     color: #FFF;
     font-size: 16px;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .logoWrapper{
@@ -62,6 +76,8 @@ header div:nth-child(2){
 .navListWrapper{
     position: relative;
     padding: 8px 33px 8px 0;
+    display: inline-flex;
+    align-items: center;
 }
 
 .navListWrapper span{
@@ -168,4 +184,15 @@ nav ul{
 .whiteBtn:hover{
     color: #FFF;
     background-color: #ff7b86;
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+}
+.container h1{
+    font-size: 52px;
+    margin-top: 128px;
+    color: #FFF;
+    line-height: 1.3em;
 }
