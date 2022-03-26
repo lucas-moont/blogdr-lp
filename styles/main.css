@@ -134,3 +134,38 @@ nav ul{
     text-align: center;
 
 }
+
+.navSecondCol{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navSecondCol a{
+    display: inline-block;
+    vertical-align: center;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navSecondCol a:first-child{
+    margin-right: 16px;
+}
+
+.navSecondCol .whiteBtn,
+.whitetBtn{
+    background-color: #FFF;
+    color: #fa808d;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 48px;
+    border-radius: 32px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.whiteBtn:hover{
+    color: #FFF;
+    background-color: #ff7b86;
+}
