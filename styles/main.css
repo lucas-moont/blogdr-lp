@@ -304,6 +304,8 @@ button{
     position: relative;
     padding: 128px 32px;
     background-image: linear-gradient(180deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
 }
 
 #infrastructure::after{
@@ -322,8 +324,8 @@ button{
 #infrastructure .firstCol img{
     position: absolute;
     right: 50%;
-    top: calc(50% - 335.95px);
-    width: 639px;
+    top: calc(50% - 324.5px);
+    width: 619px;
 
 }
 
@@ -340,3 +342,7 @@ button{
 #infrastructure p{
     color: #FFF;
 }
+
+/*FUTURE FIXES*/
+
+/*FIX CELLPHONE IMAGES RESPONSIVITY IN INFRASTRUCTURE SECTION FOR TABLETS*/
