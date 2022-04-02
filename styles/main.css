@@ -322,6 +322,21 @@ button{
 #infrastructure .firstCol img{
     position: absolute;
     right: 50%;
-    top: -150%;
-    width: 45%
+    top: calc(50% - 335.95px);
+    width: 639px;
+
+}
+
+#infrastructure h2{
+    font-size: 44px;
+    color: #FFF;
+    margin-bottom: 32px;
+}
+
+#infrastructure .secondCol{
+    margin-left: 64px;
+}
+
+#infrastructure p{
+    color: #FFF;
 }
