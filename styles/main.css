@@ -365,6 +365,23 @@ button{
     background-repeat: no-repeat;
 }
 
+/*footer*/
+
+footer{
+    background-color: #24242c;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 62px 32px;
+    border-top-right-radius: 200px;
+    color: #FFF;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 32px;
+}
 /*FUTURE FIXES*/
 
 /*FIX CELLPHONE IMAGES RESPONSIVITY IN INFRASTRUCTURE SECTION FOR TABLETS*/
