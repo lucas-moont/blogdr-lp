@@ -164,7 +164,9 @@ nav ul{
 
 .container{
     text-align: center;
-
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .navSecondCol{
@@ -341,6 +343,26 @@ button{
 
 #infrastructure p{
     color: #FFF;
+}
+
+/*FREE SECTION*/
+
+#free .firstCol{
+    position: relative;
+    padding: 258px 32px;
+}
+
+#free img{
+    display: none;
+}
+
+#free{
+    background-image: url('/images/illustration-laptop-desktop.svg');
+    background-size: calc(55%);
+    background-position-x: calc(-35%);
+    background-position-y: calc(55% - 65px);
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
 }
 
 /*FUTURE FIXES*/
