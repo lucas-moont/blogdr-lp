@@ -247,18 +247,32 @@ nav ul{
     width: 100%;
     display: block;
     transition: 0.5s;
+    border-radius: 0;
+}
+
+.menuMobileWrap ul:first-child{
+    margin-bottom: 16px;
+    border-bottom: 1px solid #1c324055;
 }
 
 .menuMobileWrap ul li{
     transition: 0.5s;
     font-size: 18x;
     color: #1c3240;
-    padding: 8px;
+    padding: 4px;
     width: 100%;
 }
 
-.menuMobileWrap ul li:hover{
-   color: red;
+.menuMobileWrap ul li ul{
+    margin: 8px 0;
+    max-height: 0;
+    transition: 1s;
+    overflow: hidden;
+    background-color: #efeff1;
+}
+
+.menuMobileWrap ul li:hover ul{
+   max-height: 1000px;
 }
 
 
