@@ -218,7 +218,8 @@ nav ul{
     border-radius: 8px;
     text-align: center;
     top: 64px;
-    padding: 32px;
+    padding: 0px;
+    padding: 24px;
 }
 
 
@@ -226,10 +227,10 @@ nav ul{
     display: block;
     z-index: 2;
     position: relative;
+    padding: 0;
 }
 
-.menuMobileWrap div{
-    font-size: 18x;
+.menuMobileWrap ul{
     z-index: 3;
     position: relative;
     display: inline-flex;
@@ -238,13 +239,27 @@ nav ul{
     padding: 8px;
     cursor: pointer;
     font-weight: 600;
+    pointer-events: all;
+    opacity: 1;
+    padding: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: 0.5s;
 }
 
-
-.menuMobileWrap div:hover{
-    color: red;
+.menuMobileWrap ul li{
+    transition: 0.5s;
+    font-size: 18x;
+    color: #1c3240;
+    padding: 8px;
+    width: 100%;
 }
 
+.menuMobileWrap ul li:hover{
+   color: red;
+}
 
 
 .navSecondCol .whiteBtn,
