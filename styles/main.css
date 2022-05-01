@@ -220,6 +220,8 @@ nav ul{
     top: 64px;
     padding: 0px;
     padding: 24px;
+    opacity: 0;
+    display: none;
 }
 
 
@@ -239,7 +241,6 @@ nav ul{
     padding: 8px;
     cursor: pointer;
     font-weight: 600;
-    pointer-events: all;
     opacity: 1;
     padding: 0;
     left: 0;
@@ -263,16 +264,38 @@ nav ul{
     width: 100%;
 }
 
+.menuMobileWrap ul li a{
+    width: 100%;
+    display: inline-block;
+}
+
 .menuMobileWrap ul li ul{
     margin: 8px 0;
     max-height: 0;
     transition: 1s;
     overflow: hidden;
     background-color: #efeff1;
+    border-radius: 8px;
 }
 
 .menuMobileWrap ul li:hover ul{
    max-height: 1000px;
+}
+
+.mobileUlLast a{
+    padding: 8px;
+}
+
+.menuMobileWrap .signBtn{
+    background-image: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    display: inline-flex;
+    height: 50px;
+    width: 145px;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 36px;
+    font-size: 18px;
+    align-items: center;
 }
 
 
