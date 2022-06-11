@@ -481,6 +481,37 @@ footer .container{
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 32px;
 }
+
+footer ul{
+    list-style: none;
+}
+
+footer li{
+    margin-bottom: 16px;
+}
+
+footer a{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 300;
+    position: relative;
+}
+
+footer a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: #FFF;
+    border-radius: 3px;
+    transition: 0.3s;
+    bottom: 0px;
+    left: 0;
+}
+
+footer a:hover::after{
+    width: 100%;
+}
 /*FUTURE FIXES*/
 
-/*FIX CELLPHONE IMAGES RESPONSIVITY IN INFRASTRUCTURE SECTION FOR TABLETS*/
+/*FIX CELLPHONE IMAGES RESPONSIVITY IN INFRASTRUCTURE SECTION FOR TABLETS*
