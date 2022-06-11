@@ -512,6 +512,41 @@ footer a::after{
 footer a:hover::after{
     width: 100%;
 }
+
+@media (max-width: 1024px){
+    #infrastructure .firstCol img{
+        width: 520px;
+        top: calc(50% - 275px)
+    }
+}
+
+@media (max-width: 750px){
+    .menu{
+        justify-content: flex-end;
+    }
+    .navWrapper,
+    .navSecondCol{
+        display: none;
+    }
+
+    .wrapMobMenuBtn{
+        display: flex;
+        position: relative;
+        top: -4px;
+        width: 26px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .wrapMobMenuBtn button{
+        width: 26px;
+    }
+
+    .wrapMobMenuBtn img{
+        width: 26px;    
+    }
+
+}
 /*FUTURE FIXES*/
 
 /*FIX CELLPHONE IMAGES RESPONSIVITY IN INFRASTRUCTURE SECTION FOR TABLETS*
