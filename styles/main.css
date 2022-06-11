@@ -639,6 +639,40 @@ footer a:hover::after{
         background-position-y: -110%;
     }
 
+    #free{
+        background-image: none;
+        padding: 64px 16px;
+        overflow: hidden;
+    }
+
+    #free .container{
+        display: block;
+    }
+
+    #free .container div{
+        width: 100%;
+    }
+
+    #free .container .firstCol{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    #free img{
+        display: block;
+        width: 130%;
+        text-align: center;
+    }
+
+    footer{
+        border-top-right-radius: 100px;
+    }
+
+    footer .container{
+        display: block;
+    }
+
 }
 /*FUTURE FIXES*/
 
