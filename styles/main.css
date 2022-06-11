@@ -521,6 +521,16 @@ footer a:hover::after{
 }
 
 @media (max-width: 750px){
+    .container,
+    .container .secondCol,
+    .container .firstCol{
+        text-align: center !important;
+    }
+
+    .topPage{
+        border-bottom-left-radius: 100px;
+    }
+
     .menu{
         justify-content: flex-end;
     }
@@ -542,8 +552,91 @@ footer a:hover::after{
         width: 26px;
     }
 
+
     .wrapMobMenuBtn img{
         width: 26px;    
+    }
+
+    .intro .container{
+        padding: 16px;
+    }
+
+    .container h1{
+        font-size: 38px;
+    }
+
+    .container p{
+        font-size: 1em;
+    }
+
+    .navSecondCol 
+    .whiteBtn, 
+    .whiteBtn, 
+    .transparentBtn{
+        padding: 0;
+        width: 150px;
+        justify-content: center;
+        font-size: 16px;
+    }
+    
+    .transparentBtn:hover{
+        padding: 0;
+    }
+
+    #designedFuture{
+        padding: 64px 16px 200px;
+    }
+
+    #designedFuture h2{
+        margin-bottom: 32px;
+    }
+
+    section .container{
+        flex-direction: column-reverse;
+
+    }
+
+    section .container div{
+        width: 100% !important;
+    }
+
+    #designedFuture img{
+        display: block;
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+
+    #designedFuture{
+        background-image: none;
+    }
+
+    #infrastructure{
+        padding: 0 16px 32px;
+    }
+
+    #infrastructure .container{
+        display: block;
+    }
+
+    #infrastructure .secondCol{
+        margin-left: 0;
+    }
+
+    #infrastructure .firstCol img{
+        position: relative;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    #infrastructure .firstCol{
+        margin-top: -128px;
+    }
+
+    #infrastructure::after{
+        background-size: 120%;
+        background-position-x: center;
+        background-position-y: -110%;
     }
 
 }
