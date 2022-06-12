@@ -38,3 +38,12 @@ function menuMobileAction(){
         }, 500);
     }
 }
+
+window.addEventListener('resize', () => { 
+    if(window.innerWidth > 775){
+        menuMobile.style.display = 'none';
+        closeMenu.style.display = 'none';
+        menuHamburg.style.display = 'block';
+        menuHamburg.style.opacity = '1'   
+    }
+})

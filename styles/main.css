@@ -522,7 +522,7 @@ footer a:hover::after{
     }
 }
 
-@media (max-width: 750px){
+@media (max-width: 775px){
     section .container p{
         font-size: 1em;
     }
