@@ -549,7 +549,6 @@ footer a:hover::after{
         position: relative;
         top: -4px;
         width: 26px;
-        white-space: nowrap;
     }
 
     .wrapMobMenuBtn button{
@@ -560,6 +559,17 @@ footer a:hover::after{
 
     .wrapMobMenuBtn img{
         width: 26px;    
+    }
+
+    .menuHamburguer{
+        transition: 0.5s;
+    }
+
+    .menuClose{
+        display: none;
+        opacity: 0;
+        transform: translateX(16px);
+        transition: 0.5s;
     }
 
     .intro .container{
