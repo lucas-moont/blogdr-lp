@@ -480,6 +480,7 @@ footer .container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 32px;
+    text-align: left;
 }
 
 footer ul{
@@ -521,6 +522,9 @@ footer a:hover::after{
 }
 
 @media (max-width: 750px){
+    section .container p{
+        font-size: 1em;
+    }
     .container,
     .container .secondCol,
     .container .firstCol{
@@ -636,7 +640,11 @@ footer a:hover::after{
     #infrastructure::after{
         background-size: 120%;
         background-position-x: center;
-        background-position-y: -110%;
+        background-position-y: -240%;
+    }
+
+    #infrastructure h2{
+        font-size: 32px;
     }
 
     #free{
@@ -667,10 +675,29 @@ footer a:hover::after{
 
     footer{
         border-top-right-radius: 100px;
+        padding: 64px 16px;
     }
 
     footer .container{
         display: block;
+    }
+
+    footer .container .firstCol,
+    footer .container .secondCol{
+        width: 100%;
+    }
+
+    footer .container .firstCol{
+        margin-top: 0;
+    }
+
+    .container div p:first-of-type{
+        margin-bottom: 16px;
+        font-weight: bold;
+    }
+
+    footer .container div{
+        margin-top: 64px;
     }
 
 }
