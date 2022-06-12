@@ -217,11 +217,12 @@ nav ul{
     opacity: 1;
     border-radius: 8px;
     text-align: center;
-    top: 64px;
+    top: 58px;
     padding: 0px;
     padding: 24px;
     opacity: 0;
     display: none;
+    transition: 0.5s;
 }
 
 
@@ -548,11 +549,11 @@ footer a:hover::after{
         position: relative;
         top: -4px;
         width: 26px;
-        overflow: hidden;
         white-space: nowrap;
     }
 
     .wrapMobMenuBtn button{
+        z-index: 4;
         width: 26px;
     }
 
